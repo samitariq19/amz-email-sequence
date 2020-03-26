@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #42AFE9;
+        }
+        #content-box {
+            background-color: #FAFAFA;
+            margin-top: 50px;
+            padding: 50px;
+            border-radius: 20px;
+        }
+        #logo-container {
+            width: 30%;
+            display: block;
+            margin: 0 auto;
+        }
+        #logo {
+            width: 100%;
+        }
+        #logo-row {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        /* #logo-link {
+            display: block;
+        } */
+        #from_container {
+            width: 50%;
+            margin: 30px auto 0 auto;
+            text-align: center;
+            
+        }
+        #from_pic {
+            border-radius: 50%;
+            width: 25%;
+            margin-bottom: 20px;
+        }
+        .from-text {
+            margin-bottom: 0;
+        }
+        #email_container {
+            margin-top: 50px;
+        }
+        .trigger-text {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p class="trigger-text">Trigger: 3 Days after Email 3</p>
+    <p class="trigger-text">Subject: Supercharge your Amazon targeting!</p>
+    <!-- <p class="trigger-text">Tags Applied to the User Email: Amazon (This will be used later to personalize the email sequence</p> -->
+    <p class="trigger-text">Purpose: Provide more value relevant to the user's interest</p>
+    <div class="row">
+        <div id="content-box" class="col-md-4 offset-md-4">
+            <!-- <p>This is the content</p> -->
+            <div id="logo-row">
+                <div id="logo-container">
+                    <a id="logo-link" href="https://www.99robots.com"><img id="logo" src="99-hz-logo-black-2000.png" alt="99R Logo"></a>
+                </div>
+            </div>
+            <hr>
+            <div id="from_container">
+                <img id="from_pic" src="charlie.jpeg" alt="Charlie Patel">
+                <p class="from-text">Charlie Patel</p>
+                <p class="from-text">CEO, 99 Robots</p>
+            </div>
+            <div id="email_container">
+                <p>Hi {{Name}},</p>
+                <p>More than 54% of the product searches on the internet start on Amazon. That's volume beyond comprehension, one slip-up in targeting for your campaigns and you can burn hundreds of dollars in a matter of minutes.</p>
+                <p>This is one of the areas we find often unexplored in new accounts and simple optimizations here can lead to major uptakes in campaign performance.</p>
+                <p>So, we put together a simple guide to ensure you get the most out of the targeting options available to you and turn your failing campaigns around</p>
+                <p><a href="#">How to Run Effective Amazon Product Targeting Campaigns</a></p>
+                <p>Need help with optimizing your campaigns? We got you covered, let us know.</p>
+                <p>Speak soon!</p>
+                <br>
+                <p class="from-text">Charlie Patel</p>
+                <p class="from-text">CEO, 99 Robots</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
